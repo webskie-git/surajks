@@ -51,7 +51,7 @@ function adjustContentSize() {
 	const viewportWidth = window.innerWidth;
 	const baseWidth = 1000;
 	const scaleFactor =
-		viewportWidth < baseWidth ? (viewportWidth / baseWidth) * 0.5 : 1;
+		viewportWidth < baseWidth ? (viewportWidth / baseWidth) * 0.9 : 1;
 	contentDiv.style.transform = `scale(${scaleFactor})`;
 }
 window.addEventListener("load", adjustContentSize);
